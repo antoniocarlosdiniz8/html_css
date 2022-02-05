@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalisando Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: purple;
+        }
+        a::after{
+            content: 'x1f596';
+        }
+    </style>
+</head>
+<body>
+    <h1>Minhas redes sociais</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/antonio-carlos-dos-santos-diniz-5b5403191/">Meu linkedin</a></li>
+        <li><a href="https://github.com/antoniocarlosdiniz8">Meu GitHub</a></li>
+       
+    </ul>
+    
+</body>
+</html>
