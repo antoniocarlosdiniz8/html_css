@@ -51,6 +51,17 @@ section{
 section > p{
     padding-bottom: 2em;
 }
+section#image01{
+    background-image: url('../desafio012/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+section#image02{
+    background-image: url('../desafio012/imagens/background002.jpg');
+    background-size: cover;
+
+}
 section.normal{
     background-color: white;
     color: black;
@@ -59,6 +70,7 @@ section.imagem > p{
     display: inline-block;
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.466);
+    text-shadow: 2px 2px 0px black;
 
 
 }
