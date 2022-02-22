@@ -54,12 +54,12 @@ section > p{
 section#image01{
     background-image: url('../desafio012/imagens/background001.jpg');
     background-position: right center;
-    background-size: cover;
+    
 
 }
 section#image02{
     background-image: url('../desafio012/imagens/background002.jpg');
-    background-size: cover;
+    
 
 }
 section.normal{
@@ -71,12 +71,16 @@ section.imagem > p{
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.466);
     text-shadow: 2px 2px 0px black;
+    
 
 
 }
 section.imagem{
     background-color: rgba(0, 0, 0, 0.418);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 footer {
     background-color: black;
