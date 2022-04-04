@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
         body{
             font-family: Arial, Helvetica, sans-serif;
 
@@ -22,12 +23,21 @@
             background-color: gray;
             color: white;
         }
+        caption{
+            font-family: 'Roboto Serif', serif;
+            color: black;
+            background-color: lightgrey;
+            padding: 10px;
+
+
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <!--ANATOMIA PARA TABELAS GRANDES
+        CAPTION -> TÍTULO DA TABELA
         TABLE
             THEADE
                 TR, TD, TH
@@ -37,6 +47,7 @@
                 TR, TD, TH
            -->
     <table>
+        <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
                 <th>Estado</th>
