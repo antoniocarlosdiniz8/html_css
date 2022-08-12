@@ -6,51 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesclagem de células</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Serif:wght@100&display=swap');
-        h1{
-            text-align: center;
-            font-family: 'Grape Nuts', cursive;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
         table{
             border-collapse: collapse;
-            width: 300px;
+        }
+        th, td{
+            padding: 5px;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+        #unico{
             text-align: center;
         }
-        td{
-            border: 1px solid black;
-            padding: 10px;
-            
+        thead{
+            background-color: lightgray;
         }
+        tbody > tr:nth-child(even){
+            background-color: gray;
+            color: white;
+        }
+        
+        
     </style>
 </head>
 <body>
     <h1>Minha Tabela linda</h1>
     <table>
-        <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
-            
-        </tr>
-        <tr>
-            <td rowspan="2">D</td>
-            <td>E</td>
-            <td>I</td>
-            
-        </tr>
-        <tr>
-            
-            
-            <td colspan="2">M</td>
-        </tr>
-        <tr>
-            <td>N</td>
-            
-            <td colspan="2">P</td>
-            
-        </tr>
+        <thead>
+            <tr>
+                <th>Motoristas</th>
+                <th>Veículo</th>
+                <th>Placa</th>
+                <th>Ajudante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jeferson</td>
+                <td>Caminhão</td>
+                <td>phr-2h05</td>
+                <td>Janailsom</td>
+            </tr>
+            <tr>
+                <td>Elison</td>
+                <td>Caminhão</td>
+                <td>phu-3g52</td>
+                <td>Admilsom</td>
+            </tr>
+            <tr>
+                <td>Samuel</td>
+                <td>Fiorino</td>
+                <td>phr-0023</td>
+                <td>João</td>
+            </tr>
+            <tr>
+                <td>Jeuendel</td>
+                <td>Fiorino</td>
+                <td>qqn-0h05</td>
+                <td>Pedro</td>
+            </tr>
+            <tr>
+                <td>Antonio</td>
+                <td>Fiorino</td>
+                <td>phz-0h05</td>
+                <td>Mateus</td>
+            </tr>
+        
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de entregas</th>
+                <td id="unico" colspan="3">10</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
