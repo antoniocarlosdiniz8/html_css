@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefone e Email</title>
+    <style>
+        #forme{
+            background-color: rgba(105, 11, 11, 0.575);
+            padding: 10px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .redondo{
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Telefone e Email</h1>
+    <form id="forme" action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <input class="redondo" type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input class="redondo" type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxx">
+            </p>
+            <p >
+                <input class="redondo" type="submit" value="Enviar">
+                <input class="redondo" type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
