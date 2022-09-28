@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Color e Range</title>
+    <style>
+        form{
+            background-color: cornflowerblue;
+            width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de cor</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nível de Sastifação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="9">
+        </p>
+        <p>
+            <label for="ifoto">Enviar Curriculo:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
