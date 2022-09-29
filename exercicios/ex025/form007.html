@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos Controles</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        form{
+            background-color: rgb(4, 167, 196);
+            width: 200px;
+            padding: 10px;
+            border-radius: 8px;
+
+        }
+        .red{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Novos Controles</h1>
+    <div>
+        <form action="cadastro.php">
+            <p>
+                <label for="iestado">Estados:</label>
+                <select name="estado" id="iestado">
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                    </optgroup>
+
+                    <option value="PA">Para</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+
+                </select>
+            </p>
+
+        </form>
+    </div>
+    
+</body>
+</html>
