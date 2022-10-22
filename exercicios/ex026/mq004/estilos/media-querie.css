@@ -1,8 +1,123 @@
 @charset "UTF-8";
 
-/*Todas as Demais Midias*/
+/*Todas as Demais Midias
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 600px) {...}*/  /**/
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*@media only screen and (min-width: 768px) {...}*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
+
 
 @media print {
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        
+        text-shadow: none;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #printer{
+        display: block;
+    }
+    #pc{
+        display: none;
+    }
+    
+}
+    
+}
+
+@media screen  and (min-width: 768px) and (max-width: 992px) {/*TABLETS*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+    #printer{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    
+    
+}
+
+@media  screen and (min-width: 99px) and (max-width: 1200px) {/*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #printer{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {/*TELEVISÃO*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+    #tablet{
+        display: none;
+    }
+    #printer{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
     
 }
 
