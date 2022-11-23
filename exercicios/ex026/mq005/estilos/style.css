@@ -34,6 +34,7 @@ span#burguer:hover{
 }
 menu{
     display: block;
+    
 }
 
 menu > ul{
@@ -58,6 +59,9 @@ main{
     background-color: white;
     margin-top: 10px;
     border-radius: 10px;
+    margin: auto;
+    padding: 10px
+    
 }
 
 main > article > p{
